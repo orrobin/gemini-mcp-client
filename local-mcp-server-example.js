@@ -12,6 +12,12 @@ mcpServer.registerTool('tell_joke', {
   title: 'Tell joke',
   description: 'Returns a joke from the joke API given a word of inspiration',
   inputSchema: { hasInspiration: z.boolean(), inspiration: z.string() },
+  annotations: {
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: true,
+    openWorldHint: true
+  }
 }, async ({ hasInspiration, inspiration }) => {
 
   const inspirationParam = hasInspiration ? `?contains=${inspiration}` : ''
@@ -30,4 +36,3 @@ mcpServer.registerTool('tell_joke', {
 
 const transport = new StdioServerTransport();
 await mcpServer.connect(transport);
-

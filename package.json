@@ -1,0 +1,26 @@
+{
+  "name": "fc1dd4dc48e2164721e5b310637047fa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "local-mcp-server-example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gist.github.com/fc1dd4dc48e2164721e5b310637047fa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://gist.github.com/fc1dd4dc48e2164721e5b310637047fa"
+  },
+  "homepage": "https://gist.github.com/fc1dd4dc48e2164721e5b310637047fa",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "axios": "^1.13.5",
+    "zod": "^4.3.6"
+  }
+}
